@@ -5,6 +5,7 @@ import {
     SidebarInset,
     SidebarProvider,
 } from "@/components/ui/sidebar"
+import { Chat } from "@/pages/chat"
 import { Home } from "@/pages/home"
 export default function Page() {
     return (
@@ -13,7 +14,7 @@ export default function Page() {
             <SidebarInset>
                 <Header/>
                 <div className="flex flex-1 flex-col gap-4 bg-gray-200  rounded-tl-4xl ">
-                    <Home/>
+                    <Chat/>
                 </div>
             </SidebarInset>
         </SidebarProvider>
