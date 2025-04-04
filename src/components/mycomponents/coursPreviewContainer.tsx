@@ -32,7 +32,7 @@ export function CoursPreviewContainer() {
   
     return (
         <>
-            <div className="bg-compenent p-4 rounded-[15px] my-2">
+            <div className="bg-compenent  p-4 py-1 rounded-[15px] ">
                 {data.map((data) => {
                     return <CoursPreview key={data.title} {...data} />
                 })
