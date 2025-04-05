@@ -1,0 +1,42 @@
+
+
+export function Message() {
+
+
+    const [isOpen, setIsOpen] = useState(false);
+    
+   
+
+
+
+    return (
+        <>
+            <div className="message received group flex gap-2 relative w-fit">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt='' className=" object-cover w-[50px] h-[50px] rounded-full" />
+                <div >
+                    <div className="flex gap-2 items-end "><p className="font-Urb_medium  text-[#515151]">Grace Miller</p> <p className="text-[12px] text-[#A0A0A0] pb-0.25 ">10:30 AM</p></div>
+                    <div className="my-2 border rounded-tl-[0] rounded-[14px] p-4 py-3 text-[18px] shadow-[0_1px_4px_rgba(0,0,0,0.15)] ">
+                        <p>
+                            Hi Jack! I'm doing well, thanks. Can't wait for the weekend!
+                        </p>
+
+                    </div>
+                    <button  className="absolute -right-16 top-14 -translate-y-1/2 bg-gray-200 text-gray-600 px-2 py-1 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                        <img src={chat_option} alt="" />
+                    </button>
+                </div>
+            </div>
+            <div className="message sended flex flex-col justify-end items-end ">
+                <div className=" ">
+                    <div className=" text-right text-[12px] text-[#A0A0A0]">
+                        <p className=" " >10:50 PM</p></div>
+                    <div className="my-2  rounded-tr-[0] rounded-[14px] bg-blue text-white p-4 py-3 text-[18px] shadow-[0_1px_4px_rgba(0,0,0,0.15)] ">
+                        <p className="">
+                            Hi Jack! I'm doing well, thanks. Can't wait for the weekend!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
