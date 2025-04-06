@@ -5,14 +5,12 @@
 
 @import "@/assets/fonts/Urbanist/stylesheet.css";
 
-
 @theme {
   --font-urb_Light: 'Urb-Light';
   --font-Urb: 'Urb';
   --font-Urb_medium: 'Urb-medium';
   --font-urb_bold: 'Urb-bold';
   --font-Urb_Black: 'Urb-Black';
-
 
   --color-green: #34C759;
   --color-Light_green: #DCFFE7;
@@ -24,7 +22,6 @@
   --color-yallow: #FFCC00;
   --color-compenent:#F6F6F6;
 }
-
 
 :root {
   --radius: 0.625rem;
