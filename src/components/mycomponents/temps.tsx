@@ -9,7 +9,7 @@ export function TempsApprentissage() {
         <>
             <div className="bg-white p-2 rounded-[10px]  ">
                 <h4 className='text-center text-background text-[14px] font-urb_bold'>Temps d'apprentissage</h4>
-                <div className="chart_temps_container text-center my-2">
+                <div className="chart_temps_container text-center mt-1.5">
                     <ChartBig/>
                 </div>
                 <div className="lebal_chart w-[80%] flex justify-between flex-wrap mx-auto">

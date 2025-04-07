@@ -39,7 +39,7 @@ export function ChartBig() {
     
 
     return (
-      <div className="w-300px bg-white">
+        <div className="w-300px bg-white -my-[16px] mx-[15px] ">
                 <ChartContainer
                     config={chartConfig}
                     className=" aspect-square max-h-[150px]"

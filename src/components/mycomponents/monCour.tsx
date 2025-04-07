@@ -21,7 +21,7 @@ export function MonCour(details:details_cour) {
 
     return (
         <>
-            <div className="w-1/3 bg-white rounded-[15px]">
+            <div className=" bg-white rounded-[15px] ">
                 <div className="overflow-hidden ">
                     <img src={details.img_cour} alt="" className='w-full' />
                 </div>

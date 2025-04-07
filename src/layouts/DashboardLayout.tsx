@@ -5,12 +5,18 @@ import {
     SidebarInset,
     SidebarProvider,
 } from "@/components/ui/sidebar-dashboard"
-import CalendarPage from "@/pages/calendarPage"
-import { Chart_Small } from "@/components/mycomponents/chartSmall"
-import { Chat } from "@/pages/chat"
+import { ChartXY } from "@/components/mycomponents/chartXY"
 import { Home } from "@/pages/home"
-import { CartBig } from "@/components/mycomponents/charBig"
 export default function Page() {
+    const chartData = [
+        { jour: "Lundi", Lecture: 26, Videos: 24, Tests: 8 },
+        { jour: "mardi", Lecture: 20, Videos: 20, Tests: 4 },
+        { jour: "mercredi", Lecture: 18, Videos: 22, Tests: 12 },
+        { jour: "Jeudi", Lecture: 14, Videos: 26, Tests: 11 },
+        { jour: "vendredi", Lecture: 16, Videos: 19, Tests: 9 },
+        { jour: "Samedi", Lecture: 17, Videos: 17, Tests: 8 },
+        { jour: "dimanche", Lecture: 11, Videos: 17, Tests: 16 },
+    ]
     return (
         <SidebarProvider>
             <AppSidebar />

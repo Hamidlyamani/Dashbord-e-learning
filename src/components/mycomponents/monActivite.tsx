@@ -1,16 +1,25 @@
 import chart_temps from '@/assets/imgs/chart_temps.png'
 import { CustomSelect } from '../ui/costum_dropdown'
 import chart_activite from '@/assets/imgs/chart_activite.png'
+import { ChartXY } from './chartXY'
 
 
 export function MonActivite() {
-
+    const chartData = [
+        { jour: "Lundi", Lecture: 26, Videos: 24, Tests: 8 },
+        { jour: "mardi", Lecture: 20, Videos: 20, Tests: 4 },
+        { jour: "mercredi", Lecture: 18, Videos: 22, Tests: 12 },
+        { jour: "Jeudi", Lecture: 14, Videos: 26, Tests: 11 },
+        { jour: "vendredi", Lecture: 16, Videos: 19, Tests: 9 },
+        { jour: "Samedi", Lecture: 17, Videos: 17, Tests: 8 },
+        { jour: "dimanche", Lecture: 11, Videos: 17, Tests: 16 },
+    ]
     return (
         <>
             <div className="bg-white p-4 py-2 rounded-[10px]   ">
                 <div className='flex justify-between'><h4 className="text-background text-[14px] font-urb_bold">Mon activité</h4> <div className=""><CustomSelect /></div></div>
                 <div className="flex gap-2 my-2">
-<div className="w-2/3"><img src={chart_activite} alt="" /></div>
+<div className="w-2/3"><ChartXY chartData={chartData} /></div>
                     <div className="w-1/3 grid grid-cols-2 gap-2">
                         <div className="bg-green flex justify-center items-center h-[56px] rounded-[10px] text-white flex-col  "><div>20</div> <span className='text-[8px] block'>Lecture</span></div>
                         <div className="bg-orange flex justify-center items-center h-[56px] rounded-[10px] text-white flex-col  "><div>28</div> <span className='text-[8px] block'>Vidéos</span></div>
