@@ -1,7 +1,6 @@
 import iconLeft from "@/assets/imgs/nexticon.png";
 import iconright from "@/assets/imgs/backicon.png";
 
-import { ChevronLeft, ChevronRight } from "lucide-react"
 import { DayPicker } from "react-day-picker"
 
 import { cn } from "@/lib/utils"

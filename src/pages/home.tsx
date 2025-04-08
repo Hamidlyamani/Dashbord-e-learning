@@ -12,8 +12,8 @@ export function Home() {
 
     return (
         <>
-            <div className="flex bg-gray-200 ">
-                <div className="w-3/4  p-4 pl-12">
+            <div className="flex bg-gray-200 overflow-hidden ">
+                <div className="w-3/4 max-w-3/4 overflow-hidden  p-4 pl-12">
                     <h3 className="font-urb_bold text-[25px] text-background">Preview</h3>
                     <div className="flex gap-4 my-2">
                         <div className="w-2/6 ">

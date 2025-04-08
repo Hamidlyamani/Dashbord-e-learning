@@ -22,10 +22,20 @@ import {
 const data = {
   navMain: [
     {
-      title: "leaderboard",
+      title: "home",
       url: "#",
       icon: leaderboard,
       isActive: true,
+    },
+    {
+      title: "chat",
+      url: "#",
+      icon: chat,
+    },
+    {
+      title: "calendar",
+      url: "#",
+      icon: calender,
     },
     {
       title: "library",
@@ -38,11 +48,6 @@ const data = {
       icon: school,
     },
     {
-      title: "chat",
-      url: "#",
-      icon: chat,
-    },
-    {
       title: "notes",
       url: "#",
       icon: notes,
@@ -52,24 +57,19 @@ const data = {
       url: "#",
       icon: folder,
     },
-    {
-      title: "calender",
-      url: "#",
-      icon: calender,
-    },
 
   ],
 
 }
 
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+export function AppSidebar({ onNavClick, activePage, ...props }: React.ComponentProps<typeof Sidebar> & { onNavClick: (page: string) => void,  activePage: string }) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
         <div className="logo flex justify-center my-4 "><img src={logo} className="w-[43px]" alt="" /></div>
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={data.navMain} />
+        <NavMain items={data.navMain} onNavClick={onNavClick} activePage={activePage} />
       </SidebarContent>
       <SidebarFooter>
         <div className="footer_sidebar flex justify-center mb-3">

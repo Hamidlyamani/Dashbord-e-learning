@@ -9,11 +9,14 @@ import {
 
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+
+
+
   return (
     <Sidebar {...props}>
      
       <SidebarContent>
-        <DatePicker />
+        <DatePicker  />
         <div className=" ">
           <h2 className="text-[25px] text-background font-Urb-bold  mb-4">Filtres</h2>
 

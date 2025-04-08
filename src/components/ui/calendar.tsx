@@ -5,12 +5,33 @@ import { DayPicker } from "react-day-picker"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 
+import RenderDayContentSmall from "./renderDayContentSmall"
+
+
+export type CustomContentDaystype = Record<
+  string,
+  { label: string; color: string; prof: string }[]
+  >;
+
+type FullCalendarProps = {
+  className?: string
+  classNames?: Record<string, string>
+  showOutsideDays?: boolean
+  customContentDays: CustomContentDaystype
+} & React.ComponentProps<typeof DayPicker>
+
+
 function Calendar({
   className,
   classNames,
   showOutsideDays = true,
+  customContentDays,
   ...props
-}: React.ComponentProps<typeof DayPicker>) {
+}: FullCalendarProps) {
+
+
+
+ 
   return (
     <DayPicker
       showOutsideDays={showOutsideDays}
@@ -58,6 +79,14 @@ function Calendar({
         ...classNames,
       }}
       components={{
+            Day: ({ date }) => {
+                  const today = new Date()
+                  const isToday = date.toDateString() === today.toDateString()
+                  const isOutside =
+                    date.getMonth() !== today.getMonth() || date.getFullYear() !== today.getFullYear()
+        
+          return RenderDayContentSmall(date, customContentDays, isToday, isOutside)
+                },
         IconLeft: ({ className, ...props }) => (
           <ChevronLeft className={cn("size-4", className)} {...props} />
         ),
