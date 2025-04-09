@@ -10,6 +10,7 @@ export function Calendrier() {
     const [date, setDate] = useState<Date | undefined>(new Date())
     return (
         <>
+            <div className="bg-white p-4 md:p-0 rounded-[15px]  md:rounded-[0px] mt-4 md:mt-0">
                 <div className='flex gap-6 items-center justify-between mt-4 '>
                     <h3 className="font-urb_bold text-[22px] text-background">Calendrier</h3>
                     <a href="" className='text-blue underline flex gap-1 items-center text-[15px] '>Voir plus <span className='block border-t w-[9px] h-[9px]  border-blue border-r rotate-45'></span></a>
@@ -29,5 +30,6 @@ export function Calendrier() {
                     />
                     
                 </div>
+            </div>
         </>)
 }

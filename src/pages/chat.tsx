@@ -27,7 +27,7 @@ export function Chat() {
             id: 2,
             name: "don big",
             role: "Formateur de Y.highlight",
-            roleColor: "bg-orange-200 text-orange-700",
+            roleColor: "bg-red-200 text-red-700",
             message: "Hey, how’s it going?",
             time: "10:30 AM",
             avatar: "https://randomuser.me/api/portraits/men/49.jpg",
@@ -42,17 +42,17 @@ export function Chat() {
             time: "10:30 AM",
             avatar: "https://randomuser.me/api/portraits/women/49.jpg",
             panned: false,
-        },  
+        },
         {
             id: 4,
             name: "hamid elyamani",
             role: "Formateur de Y.highlight",
-            roleColor: "bg-orange-200 text-orange-700",
+            roleColor: "bg-green-200 text-green-700",
             message: "Hey, how’s it going?",
             time: "10:30 AM",
             avatar: "https://randomuser.me/api/portraits/men/49.jpg",
             panned: false,
-        },  
+        }, 
     ];
 
     const [selectedUser, setSelectedUser] = useState(users[0])
@@ -60,10 +60,10 @@ export function Chat() {
 
     return (
         <>
-            <div className=" p-4 pl-12 h-[96%] bg-gray-200  overflow-hidden">
+            <div className=" p-4 pl-12  bg-gray-200 h-full  relative  overflow-hidden">
                 <h3 className="font-urb_bold text-[25px] text-background">Messagerie</h3>
-                <div className="flex gap-4 my-2 max-h-full ">
-                    <div className="w-1/4 bg-white shadow-xl p-4 rounded-[15px] max-h-full overflow-auto">
+                <div className="flex gap-4 my-2 ">
+                    <div className="w-1/4 bg-white shadow-xl flex flex-col p-4 rounded-[15px] h-[calc(100vh-150px)] ">
                         <div className="hed">
                             <h5 className="font-bold text-[17px] text-background ">Discussions</h5>
 
@@ -76,6 +76,7 @@ export function Chat() {
                                 />
                             </div>
                         </div>
+                        <div className="overflow-y-scroll h-full">
                         <div className="">
                             <div className="flex items-center gap-2 ">
                                 <img src={pin} alt="" className="w-4 h-4" />
@@ -117,6 +118,7 @@ export function Chat() {
                                             isActive={selectedUserId === chat.id}
                                         />
                                     ))}
+                            </div>
                             </div>
                         </div>
                     </div>

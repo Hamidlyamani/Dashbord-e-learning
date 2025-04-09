@@ -14,9 +14,9 @@ export function Header() {
     const [isOpen, setIsOpen] = useState(false);
 return (
         <>
-            <div className="flex  justify-between align-middle  p-4 text-white ">
-                <div className="">
-                    <h2 className=" text-[35px] ">
+            <div className="flex  justify-between align-middle  p-3 text-white ">
+                <div className="pl-9">
+                    <h2 className=" text-[35px]/[42px] line-hight ">
                         <span className="font-urb_bold">Hello,</span> Reyad Ouahi
                     </h2>
                 </div>
@@ -25,7 +25,7 @@ return (
                         <img src={notif} className='' alt="" />
                     </div>
                     <div className="user flex align-middle gap-2">
-                        <div className="logo w-[40px] h-[40px] flex items-center justify-center rounded-full bg-orange font-urb_bold text-[14px] "><span>R</span></div>
+                        <div className="logo w-[38px] h-[38px] flex items-center justify-center rounded-full bg-orange font-urb_bold text-[14px] "><span>R</span></div>
                         <div className="">
                         <div className="relative w-32">
                             {/* Selected Option (Button) */}
@@ -33,7 +33,7 @@ return (
                                 onClick={() => setIsOpen(!isOpen)}
                                 className="flex items-center justify-between w-full " >
                                 <div className='text-left '>
-                                    <span className="block text-[14px] font-urb_bold ">{selected.name}</span>
+                                    <span className="block text-[14px]/[14px] font-urb_bold ">{selected.name}</span>
                                     {selected.subtitle && (
                                         <span className="bg-[#FFFFFF] text-blue text-[7px] font-semibold px-2 py-1 rounded-[4px]">
                                             {selected.subtitle}

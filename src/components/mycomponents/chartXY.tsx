@@ -42,12 +42,12 @@ export function ChartXY({ chartData }: ChartXYProps) {
 
     return (
       
-        <div className="h-[130px] bg-white ">
+        <div className="h-[155px] bg-white ">
             <ChartContainer config={chartConfig}  >
                     <AreaChart
                         accessibilityLayer
                         data={chartData}
-                    height={130}
+                    height={160}
                     margin={{ top: 0, bottom: -10, left: -35, right: 0 }}
                     >
                         <XAxis

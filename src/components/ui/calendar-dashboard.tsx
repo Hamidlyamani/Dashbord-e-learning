@@ -4,7 +4,7 @@ import { DayPicker } from "react-day-picker"
 
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button-dashboard"
-import RenderDayContentSmall from "./renderDayContentSmall"
+import RenderDayContentHome from "./renderDayContentHome"
 
 function Calendar({
   className,
@@ -42,7 +42,7 @@ function Calendar({
       className={cn(className)}
       classNames={{
         months: "flex flex-col sm:flex-row gap-2 w-full",
-        month: "flex flex-col gap-4",
+        month: "flex flex-col gap-4 w-full",
         caption: "flex justify-start pt-1 relative items-d w-1/2",
         caption_label: "text-[12px] text-[Janvier, 2025]  font-Urb-medium",
         nav: "flex items-center gap-1",
@@ -58,7 +58,7 @@ function Calendar({
           "text-muted-foreground rounded-md w-12 font-urb  text-[10px]",
         row: "flex w-full mt-2 justify-between",
         cell: cn(
-          "relative p-0 text-center text-[5px] focus-within:relative focus-within:z-20 [&:has([aria-selected])]:bg-accent [&:has([aria-selected].day-range-end)]:rounded-r-md",
+          "relative p-0 text-center text-[5px] w-full flex items-center justify-center focus-within:relative focus-within:z-20 [&:has([aria-selected])]:bg-accent [&:has([aria-selected].day-range-end)]:rounded-r-md",
           props.mode === "range"
             ? "[&:has(>.day-range-end)]:rounded-r-md [&:has(>.day-range-start)]:rounded-l-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md"
             : "[&:has([aria-selected])]:rounded-md"
@@ -89,7 +89,7 @@ function Calendar({
           const isOutside =
             date.getMonth() !== today.getMonth() || date.getFullYear() !== today.getFullYear()
 
-          return RenderDayContentSmall(date, customContentDays, isToday, isOutside)
+          return RenderDayContentHome(date, customContentDays, isToday, isOutside)
         },
         IconLeft: ({ className, ...props }) => (
           <ChevronLeft className={cn("size-4", className)} {...props} />

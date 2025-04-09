@@ -22,12 +22,13 @@ export function Message(data: message) {
 
     return (
         <>
-            <div className={`message received group flex gap-2 relative w-fit max-w-1/2 ${ data.isMe?" ml-auto flex flex-col justify-end items-end":""} `}>
+            <div className={`message received group flex gap-2 relative w-fit max-w-1/2 ${data.isMe ? " ml-auto flex flex-col justify-end items-end" : ""} `}>
                 {data.isMe ? '' : <img src={data.user_img} alt='' className=" object-cover w-[50px] h-[50px] rounded-full" />}
                 <div >
-                    <div className="flex gap-2 items-end ">{!data.isMe ? <p className="font-Urb_medium  text-[#515151]">{data.user}</p> : ''}
-                        <p className={`text-[12px] text-[#A0A0A0] pb-0.25 ${data.isMe ?"text-right":""}`}>10:30 AM</p></div>
-                    <div className={`my-2 border  rounded-[14px] p-4 py-3 text-[18px] shadow-[0_1px_4px_rgba(0,0,0,0.15)] ${data.isMe ? " bg-blue text-white rounded-tr-[0]  " :"rounded-tl-[0]"}`}>
+                    <div className={`flex gap-2 items-end ${data.isMe ? "justify-end " : ""}`}>
+                        {!data.isMe ? <p className="font-Urb_medium  text-[#515151]">{data.user}</p> : ''}
+                        <p className={`text-[12px] text-[#A0A0A0] pb-0.25 ${data.isMe ? "text-right " : ""}`}>10:30 AM</p></div>
+                    <div className={`my-2 border  rounded-[14px] p-4 py-3 text-[18px] shadow-[0_1px_4px_rgba(0,0,0,0.15)] ${data.isMe ? " bg-blue text-white rounded-tr-[0]  " : "rounded-tl-[0]"}`}>
                         <p>
                             {data.text}
                         </p>
@@ -42,13 +43,13 @@ export function Message(data: message) {
                                 <button className="block text-gray-700 hover:bg-gray-100 px-4 py-2 w-full text-left cursor-pointer ">Réagir</button>
                                 <button className="block text-gray-700 hover:bg-gray-100 px-4 py-2 w-full text-left cursor-pointer ">Transférer</button>
                             </div>
-                        )}</> : 
+                        )}</> :
                         <button className="absolute -left-14 top-14 -translate-y-1/2 cursor-pointer  bg-gray-200 text-gray-600 px-2 py-1 rounded-lg text-sm opacity-0 group-hover:opacity-100 transition-opacity">
-                        <img src={chat_edit} alt="" />
+                            <img src={chat_edit} alt="" />
                         </button>}
                 </div>
             </div>
-           
+
         </>
     )
 }

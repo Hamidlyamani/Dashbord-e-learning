@@ -27,7 +27,7 @@ export default function Page() {
             <AppSidebar onNavClick={setCurrentPage} activePage={currentPage} />
             <SidebarInset>
                 <Header />
-                <div className="flex flex-1 flex-col gap-4 relative overflow-hidden  rounded-tl-4xl ">
+                <div className="flex flex-1 flex-col gap-4 relative overflow-hidden  md:rounded-tl-4xl ">
                     {renderPage()}
                 </div>
             </SidebarInset>

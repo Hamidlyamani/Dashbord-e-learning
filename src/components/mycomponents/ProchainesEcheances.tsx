@@ -33,7 +33,7 @@ export function ProchainesEcheances() {
     }]
     return (
         <>
-            <div>
+            <div className='bg-white p-4 md:p-0 rounded-[15px]  md:rounded-[0px]  '>
                 <div className='flex gap-6 items-center justify-between '>
                     <h3 className="font-urb_bold text-[22px] text-background">Prochaines échéances</h3>
                     <a href="" className='text-blue underline flex gap-1 items-center text-[15px] '>Voir plus <span className='block border-t w-[9px] h-[9px]  border-blue border-r rotate-45'></span></a>

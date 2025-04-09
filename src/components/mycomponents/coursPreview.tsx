@@ -16,7 +16,7 @@ export function CoursPreview(details:coursPreview ) {
 
     return (
         <>
-            <div className="bg-white  p-1 rounded-[10px] flex items-center my-2 gap-2">
+            <div className="bg-white  p-2 rounded-[10px] flex items-center my-2 gap-2">
 
                 <div className="w-1/2 flex gap-1 items-center">
                     <div className="chart_container w-[40px]">

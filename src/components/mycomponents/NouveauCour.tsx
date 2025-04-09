@@ -28,7 +28,7 @@ export function NouveauCour(data: NouveauCour) {
 
     return (
         <>
-            <div className=" bg-white rounded-[15px] relative">
+            <div className=" bg-white rounded-[15px] flex-1 relative">
                 {data.nouveau ? (<div className="absolute bg-[#FFCFCC] text-red top-4 left-4 px-2 py-0.5 rounded-[4px] text-[8px] font-Urb_medium uppercase ">NOUVEAU</div>) : ''}
                 <div className="overflow-hidden ">
                     <img src={data.img_cour} alt="" className='w-full' />

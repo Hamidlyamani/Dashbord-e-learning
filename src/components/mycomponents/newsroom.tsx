@@ -22,16 +22,17 @@ export function Newsroom() {
         img_nows: newsroom,
         desc: 'newsroo mnewsroom Titre de news Titre de news',
         url: '#',
-        }, {
-            title: 'Titre de news 454',
-            img_nows: newsroom2,
-            desc: 'newsroo mnewsroom Titre de news Titre de news',
-            url: '#',
+       
+    }, {
+        title: 'Titre de news 2245',
+        img_nows: newsroom,
+        desc: 'newsroo mnewsroom Titre de news Titre de news',
+        url: '#',
         }]
 
     return (
         <>
-            <div>
+            <div className='bg-white p-4 md:p-0 rounded-[15px]  md:rounded-[0px] mt-4 md:mt-0'>
                 <div className='flex gap-6 items-center justify-between '>
                     <h3 className="font-urb_bold text-[22px] text-background">Newsroom</h3>
                 </div>
