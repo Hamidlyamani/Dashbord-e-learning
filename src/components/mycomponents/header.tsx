@@ -1,6 +1,7 @@
 
 import notif from '@/assets/imgs/notif.png'
 import { useState } from 'react';
+import { SidebarTrigger } from '../ui/sidebar-dashboard';
 
 export function Header() {
     
@@ -14,9 +15,11 @@ export function Header() {
     const [isOpen, setIsOpen] = useState(false);
 return (
         <>
-            <div className="flex  justify-between align-middle  p-3 text-white ">
-                <div className="pl-9">
-                    <h2 className=" text-[35px]/[42px] line-hight ">
+        <div className="flex  justify-between items-center  p-3 text-white ">
+            
+            <div className="pl-2 flex gap-2">
+                <SidebarTrigger className="-ml-1 lg:hidden" />
+                <h2 className="  text-[24px]/[26px]  lg:text-[35px]/[42px] line-hight ">
                         <span className="font-urb_bold">Hello,</span> Reyad Ouahi
                     </h2>
                 </div>
@@ -27,7 +30,7 @@ return (
                     <div className="user flex align-middle gap-2">
                         <div className="logo w-[38px] h-[38px] flex items-center justify-center rounded-full bg-orange font-urb_bold text-[14px] "><span>R</span></div>
                         <div className="">
-                        <div className="relative w-32">
+                        <div className="relative w-32 hidden lg:block">
                             {/* Selected Option (Button) */}
                             <button
                                 onClick={() => setIsOpen(!isOpen)}

@@ -55,7 +55,7 @@ function Calendar({
         table: "w-full border-collapse space-x-1",
         head_row: "flex justify-between ",
         head_cell:
-          "text-muted-foreground rounded-md w-12 font-urb  text-[10px]",
+          "text-muted-foreground rounded-md w-full font-urb  text-[10px]",
         row: "flex w-full mt-2 justify-between",
         cell: cn(
           "relative p-0 text-center text-[5px] w-full flex items-center justify-center focus-within:relative focus-within:z-20 [&:has([aria-selected])]:bg-accent [&:has([aria-selected].day-range-end)]:rounded-r-md",

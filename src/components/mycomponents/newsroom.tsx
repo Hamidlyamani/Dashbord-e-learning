@@ -32,7 +32,7 @@ export function Newsroom() {
 
     return (
         <>
-            <div className='bg-white p-4 md:p-0 rounded-[15px]  md:rounded-[0px] mt-4 md:mt-0'>
+            <div className='bg-white p-4 lg:p-0 rounded-[15px]  lg:rounded-[0px] mt-4 lg:mt-0'>
                 <div className='flex gap-6 items-center justify-between '>
                     <h3 className="font-urb_bold text-[22px] text-background">Newsroom</h3>
                 </div>

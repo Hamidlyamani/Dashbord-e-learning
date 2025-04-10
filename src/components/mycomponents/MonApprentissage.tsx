@@ -112,7 +112,7 @@ export function MonApprentissage() {
             if (width < 640) {
                 // mobile
                 setCardsPerView(1);
-            } else if (width < 1024) {
+            } else if (width < 1280) {
                 // tablet
                 setCardsPerView(2);
             } else {

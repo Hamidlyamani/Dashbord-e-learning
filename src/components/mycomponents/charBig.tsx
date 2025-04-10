@@ -38,10 +38,10 @@ export function ChartBig() {
     
 
     return (
-        <div className="w-300px bg-white -my-[8px] mx-[8px] ">
+        <div className="w-fit bg-white -my-[8px]   -mx-[8px] ">
                 <ChartContainer
                     config={chartConfig}
-                    className=" aspect-square max-h-[150px]"
+                    className=" aspect-square h-[150px]"
                 >
                     <PieChart>
                         <ChartTooltip
@@ -52,7 +52,7 @@ export function ChartBig() {
                             data={chartData}
                             dataKey="visitors"
                             nameKey="browser"
-                            innerRadius={46}
+                            innerRadius={43}
                         >
                             <Label
                                 content={({ viewBox }) => {

@@ -1,4 +1,4 @@
-import chart_temps from '@/assets/imgs/chart_temps.png'
+
 import { ChartBig } from './charBig'
 
 
@@ -7,9 +7,9 @@ export function TempsApprentissage() {
 
     return (
         <>
-            <div className="bg-white p-3 rounded-[10px]  ">
+            <div className="bg-white py-3 px-2 rounded-[10px]  ">
                 <h4 className='text-center text-background text-[14px] font-urb_bold'>Temps d'apprentissage</h4>
-                <div className="chart_temps_container text-center mt-1.5 ">
+                <div className="chart_temps_container flex justify-center text-center mt-1.5 ">
                     <ChartBig />
                 </div>
                 <div className="lebal_chart w-[80%] flex justify-between flex-wrap mx-auto">
