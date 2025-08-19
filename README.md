@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README - Formly Dashboard</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0 20px; background-color: #f4f4f9; color: #333;">
+    <div style="max-width: 800px; margin: 20px auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+        <h1 style="color: #2c3e50;">Formly - LMS Dashboard 🎓</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+        <h2 style="color: #2c3e50;">Live Demo</h2>
+        <p><a href="https://hamidlyamani.github.io/Dashbord-e-learning/" target="_blank" style="color: #3498db; text-decoration: none;">View Formly Dashboard</a></p>
 
-Currently, two official plugins are available:
+        <h2 style="color: #2c3e50;">Project Overview</h2>
+        <p><strong>Formly</strong> is a dashboard and login page for an LMS (Learning Management System) solution designed for schools. It provides an overview of courses, interactive charts, and pages for chat, events (calendars), and login functionality. This project was created to practice and apply my skills in <strong>React</strong> and <strong>TypeScript</strong>, with a focus on modern design and responsive layouts.</p>
+        <p><strong>Note:</strong> This is a practice project and not a real LMS application.</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+        <h2 style="color: #2c3e50;">Key Features</h2>
+        <ul style="list-style-type: disc; margin: 10px 0 10px 20px;">
+            <li><strong>Dashboard Overview:</strong> See all courses and their progress at a glance.</li>
+            <li><strong>Interactive Charts:</strong> Visualize multiple types of data, including course tests and student progress.</li>
+            <li><strong>Chat Page:</strong> Communicate within the platform.</li>
+            <li><strong>Event/Calendar Page:</strong> View and manage school events.</li>
+            <li><strong>Login Page:</strong> User authentication interface with smooth design.</li>
+            <li><strong>Beautiful, Modern Design:</strong> Clean, responsive, and user-friendly layout.</li>
+        </ul>
 
-## Expanding the ESLint configuration
+        <h2 style="color: #2c3e50;">Technologies Used</h2>
+        <ul style="list-style-type: disc; margin: 10px 0 10px 20px;">
+            <li><strong>React:</strong> For building the interactive UI components.</li>
+            <li><strong>TypeScript:</strong> Ensures type safety and more robust code.</li>
+            <li><strong>HTML & Tailwind CSS:</strong> For responsive and modern styling.</li>
+            <li><strong>ShadCN UI:</strong> Provides consistent and beautiful UI components.</li>
+        </ul>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+        <h2 style="color: #2c3e50;">How to Run Locally</h2>
+        <ol style="margin: 10px 0 10px 20px;">
+            <li>Clone the repository:
+                <pre style="background-color: #eaeaea; padding: 2px 6px; border-radius: 4px; display: inline-block;">git clone &lt;repository-link&gt;</pre>
+            </li>
+            <li>Navigate to the project directory:
+                <pre style="background-color: #eaeaea; padding: 2px 6px; border-radius: 4px; display: inline-block;">cd dashbord-e-learning</pre>
+            </li>
+            <li>Install dependencies:
+                <pre style="background-color: #eaeaea; padding: 2px 6px; border-radius: 4px; display: inline-block;">npm install</pre>
+            </li>
+            <li>Start the development server:
+                <pre style="background-color: #eaeaea; padding: 2px 6px; border-radius: 4px; display: inline-block;">npm run dev</pre>
+            </li>
+            <li>Open <code style="background-color: #eaeaea; padding: 2px 6px; border-radius: 4px; display: inline-block;">http://localhost:5173/</code> in your browser.</li>
+        </ol>
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+        <h2 style="color: #2c3e50;">License</h2>
+        <p>This project is open-source and created for learning purposes.</p>
+    </div>
+</body>
+</html>
