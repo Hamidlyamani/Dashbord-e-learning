@@ -7,7 +7,8 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: 'Dashbord-e-learning', 
+  base: 'Dashbord-e-learning',
+  
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

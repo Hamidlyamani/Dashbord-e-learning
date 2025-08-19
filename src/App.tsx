@@ -6,10 +6,10 @@ import LoginPage from './pages/loginPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Dashbord-e-learning">
       <Routes>
-        <Route path="/" element={<Page />} /> 
-        <Route path="/login" element={<LoginPage />} /> 
+        <Route path="/" element={<Page />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </Router>
   );
