@@ -1,4 +1,4 @@
-import { Calendar, CustomContentDaystype } from "@/components/ui/calendar"
+import { Calendar } from "@/components/ui/calendar"
 import {
   SidebarGroup,
   SidebarGroupContent,

@@ -1,6 +1,5 @@
 
 import { CoursPreview } from "./coursPreview";
-import chart from '@/assets/imgs/chart1.png'
 
 
 const data = [{

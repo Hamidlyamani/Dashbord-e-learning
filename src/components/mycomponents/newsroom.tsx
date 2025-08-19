@@ -24,7 +24,7 @@ export function Newsroom() {
         url: '#',
        
     }, {
-        title: 'Titre de news 2245',
+        title: 'Titre de news 2246',
         img_nows: newsroom,
         desc: 'newsroo mnewsroom Titre de news Titre de news',
         url: '#',

@@ -83,10 +83,10 @@ function FullCalendar({
 
           return RenderDayContent(date, customContentDays, isToday, isOutside)
         },
-        IconLeft: ({ className, ...props }) => (
+        IconLeft: () => (
           <img src={iconright} alt="" className="size-8" />
         ),
-        IconRight: ({ className, ...props }) => (
+        IconRight: () => (
           <img src={iconLeft} alt="" className="size-8" />
         ),
       }}

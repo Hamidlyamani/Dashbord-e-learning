@@ -56,7 +56,7 @@ export function MonCour(details:details_cour) {
                             <div className="charts flex gap-1 items-center">
                                 {
                                     details.chart_cour_details.map((chartinfo,i) => {
-                                        return (<div className="chart w-[25px]"> <Chart_Small key={i} {...chartinfo} /> </div>)
+                                        return (<div className="chart w-[25px]" key={i}> <Chart_Small  {...chartinfo} /> </div>)
                                     })
                                 }
                                

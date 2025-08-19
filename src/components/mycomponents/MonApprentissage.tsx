@@ -1,7 +1,9 @@
 
 
-import cours_1 from '@/assets/imgs/cours_1.png'
-import cours_2 from '@/assets/imgs/cours_2.png'
+import cours_1 from '@/assets/imgs/cours_1.webp'
+import cours_2 from '@/assets/imgs/cours_2.webp'
+import cours_3 from '@/assets/imgs/cours_3.webp'
+import cours_4 from '@/assets/imgs/cours_4.webp'
 import { MonCour } from './monCour'
 import { useEffect, useState } from 'react';
 import backicon from '@/assets/imgs/backicon.png'
@@ -70,7 +72,7 @@ const cours = [{
     chart_cour_details: chart_cours
 }, {
     title: "Cours_3",
-    img_cour: cours_1,
+    img_cour: cours_3,
     chart_cours: {
         type: "cours",
         number: 90,
@@ -84,7 +86,7 @@ const cours = [{
     chart_cour_details: chart_cours
 }, {
     title: "Cours_4",
-    img_cour: cours_2,
+    img_cour: cours_4,
     chart_cours: {
         type: "cours",
         number: 90,
@@ -173,11 +175,11 @@ export function MonApprentissage() {
                 </div>
             </div>
 
-              <div className=" flex gap-4 transition-all duration-300">
-                               {visibleCourses.map((cour, index) => (
-                                   <MonCour key={startIndex + index} {...cour} />
-                               ))}
-                           </div>
+            <div className=" flex gap-4 transition-all duration-300">
+                {visibleCourses.map((cour, index) => (
+                    <MonCour key={startIndex + index} {...cour} />
+                ))}
+            </div>
         </div>
     );
 }

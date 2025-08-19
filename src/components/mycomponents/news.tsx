@@ -1,4 +1,3 @@
-import newsroom from '@/assets/imgs/img_news.png'
 import arrow from '@/assets/imgs/arrow-right.png'
 
 type nows = {

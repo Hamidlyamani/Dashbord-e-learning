@@ -1,7 +1,8 @@
 
 
-import nouveau_cour from '@/assets/imgs/nouveau_cour.png'
-import nouveau_cour_2 from '@/assets/imgs/cours_3.png'
+import nouveau_cour from '@/assets/imgs/cours_4.webp'
+import nouveau_cour_1 from '@/assets/imgs/cours_5.webp'
+import nouveau_cour_2 from '@/assets/imgs/cours_6.webp'
 import { NouveauCour } from './NouveauCour'
 import { useEffect, useState } from 'react';
 
@@ -10,7 +11,7 @@ import nexticon from '@/assets/imgs/nexticon.png'
 
 const NouveauCours = [{
     title: 'Cour_test',
-    img_cour: nouveau_cour,
+    img_cour: nouveau_cour_2,
     prix: 845,
     prof: 'Prof. X de Y',
     duration: "3 Hours",
@@ -20,7 +21,7 @@ const NouveauCours = [{
     nouveau: true
 }, {
     title: 'Cour_hamid',
-    img_cour: nouveau_cour_2,
+    img_cour: nouveau_cour_1,
     prix: 150,
     prof: 'Prof. hamid de Y',
     duration: "8 Hours",
@@ -30,7 +31,7 @@ const NouveauCours = [{
     nouveau: false
 }, {
     title: 'Cour_test 3',
-    img_cour: nouveau_cour,
+    img_cour: nouveau_cour_2,
     prix: 150,
     prof: 'Prof. X de Y',
     duration: "22 Hours",
@@ -38,56 +39,56 @@ const NouveauCours = [{
     totalReviews: 268,
     total_apprenants: 563,
     nouveau: true
-    },
-    {
-        title: 'Cour_test 4',
-        img_cour: nouveau_cour_2,
-        prix: 950,
-        prof: 'Prof. X de Y',
-        duration: "22 Hours",
-        rating: 1.4,
-        totalReviews: 268,
-        total_apprenants: 563,
-        nouveau: true
-    }]
+},
+{
+    title: 'Cour_test 4',
+    img_cour: nouveau_cour,
+    prix: 950,
+    prof: 'Prof. X de Y',
+    duration: "22 Hours",
+    rating: 1.4,
+    totalReviews: 268,
+    total_apprenants: 563,
+    nouveau: true
+}]
 export function NouveautesCours() {
-     const [cardsPerView, setCardsPerView] = useState(3);
-        const [startIndex, setStartIndex] = useState(0);
-    
-        useEffect(() => {
-            const updateCardsPerView = () => {
-                const width = window.innerWidth;
-                if (width < 640) {
-                    // mobile
-                    setCardsPerView(1);
-                } else if (width < 1280) {
-                    // tablet
-                    setCardsPerView(2);
-                } else {
-                    // desktop
-                    setCardsPerView(3);
-                }
-            };
-    
-            updateCardsPerView(); // run once on load
-            window.addEventListener("resize", updateCardsPerView);
-            return () => window.removeEventListener("resize", updateCardsPerView);
-        }, []);
-    
+    const [cardsPerView, setCardsPerView] = useState(3);
+    const [startIndex, setStartIndex] = useState(0);
+
+    useEffect(() => {
+        const updateCardsPerView = () => {
+            const width = window.innerWidth;
+            if (width < 640) {
+                // mobile
+                setCardsPerView(1);
+            } else if (width < 1280) {
+                // tablet
+                setCardsPerView(2);
+            } else {
+                // desktop
+                setCardsPerView(3);
+            }
+        };
+
+        updateCardsPerView(); // run once on load
+        window.addEventListener("resize", updateCardsPerView);
+        return () => window.removeEventListener("resize", updateCardsPerView);
+    }, []);
+
     const maxStartIndex = NouveauCours.length - cardsPerView;
-    
-        const handleNext = () => {
-            if (startIndex < maxStartIndex) {
-                setStartIndex((prev) => prev + 1);
-            }
-        };
-    
-        const handlePrev = () => {
-            if (startIndex > 0) {
-                setStartIndex((prev) => prev - 1);
-            }
-        };
-    
+
+    const handleNext = () => {
+        if (startIndex < maxStartIndex) {
+            setStartIndex((prev) => prev + 1);
+        }
+    };
+
+    const handlePrev = () => {
+        if (startIndex > 0) {
+            setStartIndex((prev) => prev - 1);
+        }
+    };
+
     const visibleCourses = NouveauCours.slice(startIndex, startIndex + cardsPerView);
     return (
         <>

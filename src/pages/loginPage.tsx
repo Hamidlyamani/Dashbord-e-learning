@@ -1,4 +1,3 @@
-import { GalleryVerticalEnd } from "lucide-react"
 import imgLogin from '@/assets/imgs/imgLogin.png'
 import { LoginForm } from "@/components/login-form"
 
